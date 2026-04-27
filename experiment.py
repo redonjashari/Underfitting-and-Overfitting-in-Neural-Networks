@@ -243,7 +243,6 @@ print("\n" + "=" * 60)
 print("NYC TAXI")
 print("=" * 60)
 
-# pip install pyarrow  (needed for parquet)
 url_taxi = (
     "https://d37ci6vzurychx.cloudfront.net/trip-data"
     "/green_tripdata_2023-01.parquet"
@@ -474,10 +473,9 @@ print("Saved plot_comparison_hyperparam.png")
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-# 4. PRINT TABLE VALUES
+# 4. TABLE VALUES
 # ═════════════════════════════════════════════════════════════════════════════
 print("\n" + "=" * 60)
-print("COPY THESE VALUES INTO THE LATEX TABLES")
 print("=" * 60)
 print("\n--- Auto MPG single-split MSE ---")
 for (name, res), lbl in zip(res_mpg.items(), SHORT_LABELS):
